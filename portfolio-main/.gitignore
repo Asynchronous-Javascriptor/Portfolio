@@ -1,0 +1,6 @@
+node_modules/
+.env
+*.log
+server_status.txt
+debug.log
+test_server.js

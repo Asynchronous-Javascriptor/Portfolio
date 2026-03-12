@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <a href="#" class="logo">Portfolio</a>
+      <div class="toggle" onclick="toggleMenu();"></div>
+      <ul class="menu">
+        <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu();">About</a></li>
+        <li><a href="#services" onclick="toggleMenu();">Services</a></li>
+        <li><a href="#work" onclick="toggleMenu();">Work</a></li>
+        <li><a href="#Skills" onclick="toggleMenu();">Skills</a></li>
+        <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+      </ul>
+    </header>
+
+
+    <section class="banner" id="home">
+      <div id="cursor">.</div>
+      <div id="scrolldown">
+        <h1>Scroll Down 👇</h1>
+      </div>
+      <div class="text-banner">
+        <h2>Hello, I'm <br><span>Himanshu singh.</span></h2>
+        <div style="width: fit-content; height:70px; position: relative;">
+          <p id="passion"> </p>
+        </div>
+        <a href="public/files/Himanshu Singh.pdf" target="_blank" class="btn">resume <svg
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-download-icon lucide-download">
+            <path d="M12 15V3" />
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <path d="m7 10 5 5 5-5" />
+          </svg></a>
+      </div>
+    </section>
+  </div>
+
+
+  <section class="about" id="about">
+    <div class="heading">
+      <h2>About Me</h2>
+    </div>
+    <div class="content">
+      <div class="contentbox">
+        <h3>I am currently learning client web languages.</h3>
+        <p>I am a numerical innovative manager. And I'm training with Freecodecamp and Online tutorials to master
+          HTML,
+          CSS and Javascript languages. Here is the second template for a responsive portfolio landing page. <br>And
+          what we should master in first year in my school.
+          <br><br>Enjoy !
+        </p>
+      </div>
+      <div class="w50">
+        <img src="public/images/banner.jpg" class="img">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="work" id="work">
+    <div class="heading black">
+      <h2>My latest work</h2>
+      <p>Here are some works done with HTML/CSS languages</p>
+    </div>
+    <div class="samples">
+      <swiper-slide>
+        <video autoplay loop muted>
+          <source src="public/vedioes/animatedfinal.mp4" type="video/mp4">
+        </video>
+        <center>
+          <h2 style="color: lightseagreen; padding: 7px 0;">Ray-Ban Animated Website design</h2><br>
+          <a target="_blank" href="https://asynchronous-javascriptor.github.io/landing_page-sheryJs/">Live Preview</a>
+        </center>
+      </swiper-slide>
+
+
+      <swiper-slide>
+        <video autoplay loop muted>
+          <source src="public/vedioes/LiveMeet.mp4" type="video/mp4">
+        </video>
+        <center>
+          <h2 style="color: lightseagreen; padding: 7px 0;">LiveMeet a online meeting platform</h2><br>
+          <a target="_blank" href="https://livemeet-sxqj.onrender.com/">Live Preview</a>
+        </center>
+      </swiper-slide>
+
+      <swiper-slide>
+        <video autoplay loop muted>
+          <source src="public/vedioes/QuickPark.mp4" type="video/mp4">
+        </video>
+        <center>
+          <h2 style="color: lightseagreen; padding: 7px 0;">Quick-park a smart parking solution</h2><br>
+          <a target="_blank" href="https://quickpark-u1d0.onrender.com/login">Live Preview</a>
+        </center>
+      </swiper-slide>
+
+
+      <swiper-slide>
+        <video autoplay loop muted>
+          <source src="public/vedioes/grandprixfinal.mp4" type="video/mp4">
+        </video>
+
+        <center>
+          <h2 style="color: lightseagreen; padding: 7px 0;">Grand-Prix Animated Website design</h2><br>
+          <a target="_blank" href="https://asynchronous-javascriptor.github.io/Grand_prix/">Live Preview</a>
+        </center>
+      </swiper-slide>
+
+
+
+      <swiper-slide>
+        <video autoplay loop muted>
+          <source src="public/vedioes/amazonfinal.mp4" type="video/mp4">
+        </video>
+        <center>
+          <h2 style="color: lightseagreen; padding: 7px 0;">Amazon Clone</h2><br>
+          <a target="_blank" href="https://asynchronous-javascriptor.github.io/Amazon_clone/">Live Preview</a>
+        </center>
+      </swiper-slide>
+    </div>
+
+    <div class="heading">
+      <a href="#" class="btn" id="SourceCode">Source Code <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+          viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" class="lucide lucide-code-xml-icon lucide-code-xml">
+          <path d="m18 16 4-4-4-4" />
+          <path d="m6 8-4 4 4 4" />
+          <path d="m14.5 4-5 16" />
+        </svg></a>
+    </div>
+  </section>
+
+
+
+
+  <section class="services" id="services">
+    <div class="heading white">
+      <h2>Services</h2>
+      <p>In one sentence,I create simple HTML/CSS landing pages and Website Development</p>
+    </div>
+    <div class="content">
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h1>Graphic Design</h1>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h1>Video Editing</h1>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h1>Web Design</h1>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h1>Development</h1>
+      </div>
+      <div class="servicesbox">
+        <div class="icon"><i class="fas fa-file-code"></i></div>
+        <h1>Content Writting</h1>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="Skills" id="Skills">
+    <center>
+      <h2 class="heading white">Skills</h2>
+    </center>
+
+    <div class="outer">
+      <div class="skills-track">
+        <img src="public/images/html.png" alt="HTML">
+        <img src="public/images/css.png" alt="CSS">
+        <img src="public/images/bootstrap.png" alt="Bootstrap">
+        <img src="public/images/js.png" alt="JavaScript">
+        <img src="public/images/react.png" alt="React">
+        <img src="public/images/nodejs.png" alt="Node.js">
+        <img src="public/images/ExpressJS.png" alt="Express.js">
+        <img src="public/images/MongoDB.png" alt="MongoDB">
+        <img src="public/images/python.png" alt="Python">
+        <img src="public/images/flask.png" alt="Flask">
+        <img src="public/images/MySQL.png" alt="MySQL">
+        <!-- Duplicated for seamless loop -->
+        <img src="public/images/html.png" alt="HTML">
+        <img src="public/images/css.png" alt="CSS">
+        <img src="public/images/bootstrap.png" alt="Bootstrap">
+        <img src="public/images/js.png" alt="JavaScript">
+        <img src="public/images/react.png" alt="React">
+        <img src="public/images/nodejs.png" alt="Node.js">
+        <img src="public/images/ExpressJS.png" alt="Express.js">
+        <img src="public/images/MongoDB.png" alt="MongoDB">
+        <img src="public/images/python.png" alt="Python">
+        <img src="public/images/flask.png" alt="Flask">
+        <img src="public/images/MySQL.png" alt="MySQL">
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="contact" id="contact">
+    <div class="heading white">
+      <h2>Contact Me</h2>
+      <p>Some questions about work. Here you are.</p>
+    </div>
+    <div class="content">
+      <div class="contactinfo">
+        <h3>Contact Informations</h3>
+        <div class="contactinfobox">
+          <div class="box">
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text">
+              <h3>Adress</h3>
+              <p>Kapkot Bageshwar Uttrakhand<br>present - Gurugram Haryana India<br>000</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-phone"></i></div>
+            <div class="text">
+              <h3>Phone</h3>
+              <p>( +91 ) 7906344991</p>
+            </div>
+          </div>
+          <div class="box">
+            <div class="icon"><i class="fas fa-envelope"></i></div>
+            <div class="text">
+              <h3>Mail</h3>
+              <p>papolahimanshu5402@gmail.com</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="formbox">
+        <form id="contactForm">
+          <h3>Message Me</h3>
+          <input type="text" name="name" placeholder="Full Name" required>
+          <input type="email" name="email" placeholder="Your email" required>
+          <input type="text" name="phone" placeholder="Contact Number (+91)">
+          <textarea name="message" placeholder="Your message" required></textarea>
+          <input type="submit" value="Send">
+          <div id="formStatus" style="margin-top:10px; color:#2196f3; font-weight:500;"></div>
+        </form>
+      </div>
+
+      <script>
+        document.getElementById('contactForm').addEventListener('submit', async function (e) {
+          e.preventDefault();
+          const status = document.getElementById('formStatus');
+          const btn = this.querySelector('input[type="submit"]');
+
+          btn.disabled = true;
+          btn.value = 'Sending...';
+          status.textContent = '';
+          status.style.color = '#2196f3';
+
+          const data = {
+            name: this.name.value,
+            email: this.email.value,
+            phone: this.phone.value,
+            message: this.message.value,
+          };
+
+          try {
+            const res = await fetch('/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(data),
+            });
+            const result = await res.json();
+
+            if (res.ok) {
+              status.style.color = '#4CAF50';
+              status.textContent = '✅ Message sent successfully!';
+              this.reset();
+            } else {
+              status.style.color = '#f44336';
+              status.textContent = '❌ ' + (result.error || 'Failed to send.');
+            }
+          } catch (err) {
+            status.style.color = '#f44336';
+            status.textContent = '❌ Network error. Please try again.';
+          }
+
+          btn.disabled = false;
+          btn.value = 'Send';
+        });
+      </script>
+    </div>
+  </section>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"
+    integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js"
+    integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
