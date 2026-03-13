@@ -82,7 +82,7 @@ header ul li a:hover {
 .banner {
   position: relative;
   min-height: 100vh;
-  background: url(public/images/banner.jpg);
+  background: url(/images/banner.jpg);
   background-size: cover;
   background-position: right;
   display: flex;
@@ -222,23 +222,23 @@ img {
 }
 
 .services .content .servicesbox:nth-child(1):hover {
-  background-image: url(public/images/graphicdesign.jpg);
+  background-image: url(/images/graphicdesign.jpg);
 }
 
 .services .content .servicesbox:nth-child(2):hover {
-  background-image: url(public/images/vedioediting.png);
+  background-image: url(/images/vedioediting.png);
 }
 
 .services .content .servicesbox:nth-child(3):hover {
-  background-image: url(public/images/web\ design.jpg);
+  background-image: url(/images/web\ design.jpg);
 }
 
 .services .content .servicesbox:nth-child(4):hover {
-  background-image: url(public/images/development.jpg);
+  background-image: url(/images/development.jpg);
 }
 
 .services .content .servicesbox:nth-child(5):hover {
-  background-image: url(public/images/contentwrite.jpg);
+  background-image: url(/images/contentwrite.jpg);
 }
 
 

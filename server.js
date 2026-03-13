@@ -9,7 +9,9 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(express.static(__dirname));
+
+// STATIC FILES SERVE
+app.use(express.static(path.join(__dirname, "public")));
 
 const transporter = nodemailer.createTransport({
   service: "gmail",
@@ -47,22 +49,15 @@ app.post("/api/contact", async (req, res) => {
     res.json({ success: true, message: "Email sent successfully!" });
   } catch (error) {
     fs.appendFileSync("error.log", new Date().toISOString() + " Email error: " + error.message + "\n");
-    res.status(500).json({ error: "Failed to send email. Please try again later." });
+    res.status(500).json({ error: "Failed to send email." });
   }
 });
 
-app.get("*", (req, res) => {
+// LOAD INDEX
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "index.html"));
 });
 
-const server = app.listen(PORT, () => {
-  fs.writeFileSync("server_status.txt", "RUNNING on port " + PORT);
-});
-
-server.on("error", (err) => {
-  fs.writeFileSync("server_status.txt", "ERROR: " + err.message);
-});
-
-process.on("uncaughtException", (err) => {
-  fs.writeFileSync("server_status.txt", "CRASH: " + err.stack);
+app.listen(PORT, () => {
+  console.log("Server running on port", PORT);
 });
