@@ -202,13 +202,15 @@ img {
 }
 
 .services .content .servicesbox {
-  padding: 40px 20px 10px 20px;
+  padding: 30px 10px 10px 10px;
   background: #222;
   color: #fff;
   max-width: 340px;
   margin: 20px;
   text-align: center;
   transition: 0.5s ease;
+  border-radius: 10px;
+  box-shadow: #dadada 2px 2px 4px;
 }
 
 .services .content .servicesbox:hover {
@@ -254,7 +256,7 @@ img {
   text-align: center;
 }
 
-.services .content .servicesbox h2 {
+.services .content .servicesbox h1 {
   font-size: 20px;
   font-weight: 600;
 }
